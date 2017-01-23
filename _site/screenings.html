@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your awesome title</title>
+    <title>The Bird Boy</title>
     <link rel="preload" href="font/ProximaNova-Bold.woff" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="font/Feather.woff" as="font" type="font/woff2" crossorigin>
           <link rel="preload" href="font/ProximaNova-Light.woff" as="font" type="font/woff2" crossorigin>
@@ -47,10 +47,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
 
-            animation-name: fadeSlow;
-            animation-duration: 800ms;
-            animation-delay: 240ms;
-            animation-fill-mode: both;
+            -webkit-animation-name: fadeSlow;
+
+                    animation-name: fadeSlow;
+            -webkit-animation-duration: 800ms;
+                    animation-duration: 800ms;
+            -webkit-animation-delay: 240ms;
+                    animation-delay: 240ms;
+            -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
   }
   #overlay {
     background:#111;
@@ -64,9 +69,17 @@
     width:100%;
     height:100vh;
 
+    display:-webkit-box;
+
+    display:-ms-flexbox;
+
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position:absolute;
   }
   .bg-load {
@@ -81,10 +94,14 @@
     background-image: url('img/DeVogelvriend_still_1.jpg');
 
     background-size:cover;
-    animation-name: fadeIn;
-    animation-duration: 400ms;
-    animation-delay: 3600ms;
-    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 400ms;
+            animation-duration: 400ms;
+    -webkit-animation-delay: 3600ms;
+            animation-delay: 3600ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
     opacity:0.4;
     min-height:100%;
     width:100%;
@@ -114,8 +131,12 @@
     font-weight:100;
   }
   #section_title {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align:center;
   }
   #section_title img{
@@ -148,9 +169,12 @@
      height: auto;
      z-index: -1000;
      overflow: hidden;
-     animation-name: fade;
-     animation-duration: 4000ms;
-     animation-fill-mode: both;
+     -webkit-animation-name: fade;
+             animation-name: fade;
+     -webkit-animation-duration: 4000ms;
+             animation-duration: 4000ms;
+     -webkit-animation-fill-mode: both;
+             animation-fill-mode: both;
 
   }
   @-webkit-keyframes fade {
@@ -173,6 +197,16 @@
       opacity:0.4;
     }
   }
+  @-webkit-keyframes fadeFull {
+    0% {
+      opacity:0.4;
+
+    }
+
+    100% {
+      opacity:1;
+    }
+  }
   @keyframes fadeFull {
     0% {
       opacity:0.4;
@@ -185,12 +219,16 @@
   }
   #title {
     opacity:0;
-    float:left;
-    position:absolute;
-    animation-name: fadeOut;
-    animation-duration: 800ms;
-    animation-delay: 3s;
-    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeOut;
+
+            animation-name: fadeOut;
+    -webkit-animation-duration: 800ms;
+            animation-duration: 800ms;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 
   }
   #title a:hover {
@@ -216,12 +254,28 @@
       opacity:1;
     }
   }
+  @-webkit-keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
   @keyframes fadeIn{
     0% {
       opacity:0;
     }
     100% {
       opacity:1;
+    }
+  }
+  @-webkit-keyframes fadeOut{
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
     }
   }
   @keyframes fadeOut{
@@ -236,9 +290,15 @@
   nav {
     width:100%;
     height:100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position:absolute;
     z-index:1;
 
@@ -256,9 +316,13 @@
     letter-spacing: 0.04em;
     font-weight:100;
 
-    animation-name:;
-    animation-duration: 320ms;
-    animation-fill-mode: both;
+    -webkit-animation-name:;
+
+            animation-name:;
+    -webkit-animation-duration: 320ms;
+            animation-duration: 320ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   nav ul li {
     opacity:0;
@@ -271,8 +335,18 @@
   nav ul li a:hover {
     color:#b8cd68;
     text-decoration: none;
-    animation: underline 240ms both;
+    -webkit-animation: underline 240ms both;
+            animation: underline 240ms both;
     cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+  }
+  @-webkit-keyframes underline {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0.72;
+
+    }
   }
   @keyframes underline {
     0% {
@@ -320,10 +394,14 @@
     font-family: 'Proxima Nova Rg';
     font-size:1.4em;
     z-index:99;
-    animation-name: fadeSlow;
-    animation-duration: 800ms;
-    animation-delay: 3600ms;
-    animation-fill-mode: both;
+    -webkit-animation-name: fadeSlow;
+            animation-name: fadeSlow;
+    -webkit-animation-duration: 800ms;
+            animation-duration: 800ms;
+    -webkit-animation-delay: 3600ms;
+            animation-delay: 3600ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .menu a {
     color:#fff;
@@ -382,7 +460,9 @@
 </div>
 <nav>
   <ul>
-
+    <li>
+      <a href="index.html">home</a>
+    </li>
     <li>
       <a href="trailer.html">trailer</a>
     </li>
@@ -402,6 +482,20 @@
   </ul>
 </nav>
 
+<div id="wrap">
+
+
+<div id="title" class="quote">
+  <!--<img src="img/img_vv_quote_1.svg" />-->
+  <blockquote style="text-align:center;">
+    "...must win a certain prize<br/>
+    as soon as possible"
+
+
+  </blockquote><span style="font-family:'Proxima Nova Lt';text-align:right;float:right;">de Volkskrant</span>
+</div>
+
+</div>
     <div id="container">
 
       <section id="section">
@@ -409,29 +503,14 @@
 
         </div>
               <article>
-    <h1>Screening</h1>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
+    <h1>Screenings</h1>
+screenings..
 
 
 
     </article>
         </section>
-        <div id="wrap">
 
-
-      <div id="title" class="quote">
-          <!--<img src="img/img_vv_quote_1.svg" />-->
-          <blockquote style="text-align:center;">
-            "...must win a certain prize<br/>
-            as soon as possible"
-
-
-          </blockquote><span style="font-family:'Proxima Nova Lt';text-align:right;float:right;">de Volkskrant</span>
-      </div>
-
-        </div>
 
     </div>
 
