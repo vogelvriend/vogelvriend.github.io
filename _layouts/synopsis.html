@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="font/ProximaNova-Bold.woff" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="font/ProximaNova-Bold.woff" as="font" type="font/woff2" crossorigin>
+            <link rel="preload" href="font/Feather.woff" as="font" type="font/woff2" crossorigin>
+              <link rel="preload" href="font/ProximaNova-Light.woff" as="font" type="font/woff2" crossorigin>
+    <title>{{site.title}}</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+    </script>
+    <link href="font/stylesheet.css" rel="stylesheet">
+  <style type="text/css">
+  html {
+    width:100%;
+    min-height:100%;
+    margin:0px auto;
+
+  }
+  body {
+    background:#111;
+    font-size:16px; /* base font size */
+    color:#fff;
+    margin:0px auto;
+    cursor: url('img/img_vv_feather_cursor.png'), auto;
+
+
+  }
+
+  #container {
+
+
+    width:100%;
+    height:100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            animation-name: fadeSlow;
+            animation-duration: 800ms;
+            animation-delay: 0ms;
+            animation-fill-mode: both;
+            background-image: url('');
+            background-size:cover;
+  }
+  #overlay {
+    background:#111;
+    opacity:0.4;
+    min-height:100%;
+    width:100%;
+    position: absolute;
+    z-index:1;
+  }
+  #wrap {
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+  }
+  #section {
+    background-image: url('img/DeVogelvriend_still_3.jpg');
+
+    background-size:cover;
+    animation-name: fadeIn;
+    animation-duration: 400ms;
+    animation-delay: 3600ms;
+    animation-fill-mode: both;
+    opacity:0.4;
+    min-height:100%;
+    width:100%;
+    float:left;
+  }
+  #sections {
+    height:1000px;
+  }
+  #section_1 {
+    background-image: url('');
+    background-size:cover;
+    background-position: center center;
+    margin-top:120px;
+
+
+
+  }
+  #section_1 article {
+
+    width:800px;
+    margin:0 auto;
+    padding:16px;
+    padding-top:56px;
+    font-family:'helvetica';
+    font-size: 0.96em;
+    line-height:1.4;
+    font-weight:100;
+  }
+  #section_title {
+    display:flex;
+    justify-content: center;
+    text-align:center;
+  }
+  #section_title img{
+    width:102%;
+    height:auto;
+  }
+  #video {
+
+  }
+  #quote {
+    position:absolute;
+    bottom:56px;
+    left:46px;
+    display:none;
+  }
+  #quote img {
+    width:612px;
+    height:auto;
+  }
+  video {
+      position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+     transform: translateX(-50%) translateY(-50%);
+     opacity:0.4;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+     animation-name: fade;
+     animation-duration: 4000ms;
+     animation-fill-mode: both;
+
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+
+    }
+
+    100% {
+      opacity:0.4;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity:0;
+
+    }
+
+    100% {
+      opacity:0.4;
+    }
+  }
+  @keyframes fadeFull {
+    0% {
+      opacity:0.4;
+
+    }
+
+    100% {
+      opacity:1;
+    }
+  }
+  #title {
+    opacity:0;
+    float:left;
+    position:absolute;
+    animation-name: fadeOut;
+    animation-duration: 800ms;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+
+  }
+  #title a:hover {
+    cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+    opacity:0.96;
+  }
+  #title img {
+
+}
+  @-webkit-keyframes fadeSlow {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeSlow {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeOut{
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  nav {
+    width:100%;
+    height:100%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    z-index:1;
+
+  }
+
+  nav ul {
+    list-style-type: none;
+    display:inline-block;
+    text-align: center;
+    margin-left:0px;
+    padding:0;
+
+    font-family: 'Feather';
+    font-size:3.32em;
+    letter-spacing: 0.04em;
+    font-weight:100;
+
+    animation-name:;
+    animation-duration: 320ms;
+    animation-fill-mode: both;
+  }
+  nav ul li {
+    opacity:0;
+  }
+  nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    cursor: url('img/img_vv_feather_cursor.png'), auto;
+  }
+  nav ul li a:hover {
+    color:#b8cd68;
+    text-decoration: none;
+    animation: underline 240ms both;
+    cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+  }
+  @keyframes underline {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0.72;
+
+    }
+  }
+  nav ul li:first-child {
+    margin-left:0px;
+  }
+  article {
+    position:relative;
+    margin:0 auto;
+    max-width:960px;
+    min-width:320px;
+    font-family: 'Proxima Nova Lt';
+    font-size:1.22em;
+    line-height:1.4em;
+    padding:40px 80px 40px 80px;
+    font-weight:100;
+    z-index:2;
+  }
+  h1 {
+    font-family: "Feather";
+    font-size:2.6em;
+    text-align:center;
+    padding-bottom:24px;
+  }
+  .menu{
+    position:fixed;
+    width:100px;
+    height:40px;
+    text-align:right;
+    top:24px;
+    right:32px;
+    font-family: 'Proxima Nova Rg';
+    font-size:1.4em;
+    z-index:99;
+    animation-name: fadeSlow;
+    animation-duration: 800ms;
+    animation-delay: 3600ms;
+    animation-fill-mode: both;
+  }
+  .menu a {
+    color:#fff;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    text-decoration: none;
+    cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+  }
+  .bg-load {
+    width:1px;
+    height:1px;
+    opacity:0;
+    left:0;
+    top:0;
+    position:absolute;
+  }
+  blockquote {
+    font-size:2.4em;
+    font-family:"Proxima Nova Rg";
+    font-weight:bold;
+    font-style: italic;
+  }
+  @media (max-width:720px) {
+    body {
+      font-size:12px;
+    }
+    article {
+      padding-top:40px;
+      padding-left:24px;
+      padding-right:24px;
+    }
+    #title img {
+        width:480px;
+        height:auto;
+    }
+    nav ul li {
+      margin-left:16px;
+    }
+  }
+  @media (max-width:600px) {
+    body {
+      font-size:11px;
+    }
+    article {
+      padding-top:40px;
+      padding-left:24px;
+      padding-right:24px;
+    }
+    #title img {
+        width:360px;
+        height:auto;
+    }
+    nav ul li {
+      margin-left:16px;
+    }
+  }
+  </style>
+  </head>
+
+  <body>
+    <div class="bg-load">
+      <img src="img/DeVogelvriend_still_3.jpg" />
+
+
+    </div>
+    <audio>
+	<source src="img/bird.mp3"></source>
+
+
+</audio>
+<div class="menu">
+  <a href="#">menu</a>
+</div>
+{% include nav.html %}
+    <div id="container">
+
+      <section id="section">
+        <div id="overlay">
+
+        </div>
+              <article>
+    <h1>{{page.title}}</h1>
+        {{page.content}}
+
+    </article>
+        </section>
+        <div id="wrap">
+
+
+      <div id="title" class="quote">
+
+          <blockquote style="text-align:center;">
+            "{{page.quote_line1}}<br/>
+            {{page.quote_line2}}"
+
+
+
+          </blockquote><span style="font-family:'Proxima Nova Lt';text-align:right;float:right;">{{page.quote_by}}</span>
+      </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script>
+    $('#container').click(function(){
+      if(!$('video').hasClass('clicked')){
+        $('video').css('animation-name', 'fadeFull').addClass('clicked');
+        $('#title').css('animation-name', 'fadeOut').css('animation-delay', '0ms').css('animation-duration', '320ms');
+        $('video').prop('muted', false);
+	} else{
+		    $('video').removeClass('clicked');
+        $('video').css('animation-name', 'fadeBack');
+        $('#title').css('animation-name', 'fadeIn').css('animation-delay', '0ms').css('animation-duration', '320ms');
+        $('video').prop('muted', true);
+	}
+    })
+    </script>
+    <script>
+    var audio = $('audio')[0];
+      $("#title, nav ul").hover(function() {
+      audio.play();
+      });
+    </script>
+    <script>
+    $('.menu').click(function(){
+      if(!$('nav').hasClass('active')){
+      $('nav').css('background', '#111').addClass('active');
+      $('nav ul li').css('opacity', '1');
+      $('nav ul').css('animation-name', 'fadeIn');
+      $(this).text('close x');
+  	} else {
+      $('nav').css('background', '').removeClass('active');
+      $('nav ul li').css('opacity', '0');
+      $('nav ul').css('animation-name', 'fadeOut');
+        $(this).text('menu');
+    }
+  })
+    </script>
+  </body>
+</html>

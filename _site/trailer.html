@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your awesome title</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <link href="font/stylesheet.css" rel="stylesheet">
+  <style type="text/css">
+  html {
+    width:100%;
+    min-height:100%;
+    margin:0px auto;
+
+  }
+  body {
+    background:#111;
+    font-size:16px; /* base font size */
+    color:#fff;
+    margin:0px auto;
+    cursor: url('img/img_vv_feather_cursor.png'), auto;
+    overflow: hidden;
+  }
+
+  #container {
+    width:100%;
+    height:100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            z-index:99;
+  }
+  #sections {
+    height:1000px;
+  }
+  #section_1 {
+    background-image: url('');
+    background-size:cover;
+    background-position: center center;
+    margin-top:120px;
+
+
+
+  }
+  #section_1 article {
+
+    width:800px;
+    margin:0 auto;
+    padding:16px;
+    padding-top:56px;
+    font-family:'helvetica';
+    font-size: 0.96em;
+    line-height:1.4;
+    font-weight:100;
+  }
+  #section_title {
+    display:flex;
+    justify-content: center;
+    text-align:center;
+  }
+  #section_title img{
+    width:102%;
+    height:auto;
+  }
+  #source {
+    width:960px;
+    height:540px;
+  }
+  #video {
+    z-index:9999;
+  }
+  #quote {
+    position:absolute;
+    bottom:56px;
+    left:46px;
+    display:none;
+  }
+  #quote img {
+    width:320px;
+    height:auto;
+  }
+
+  video {
+      position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+     transform: translateX(-50%) translateY(-50%);
+     opacity:1;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+     animation-name: fadeFull;
+     animation-duration: 4000ms;
+     animation-fill-mode: both;
+
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+
+    }
+
+    100% {
+      opacity:0.4;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity:0;
+
+    }
+
+    100% {
+      opacity:0.4;
+    }
+  }
+  @keyframes fadeFull {
+    0% {
+      opacity:0.4;
+
+    }
+
+    100% {
+      opacity:1;
+    }
+  }
+  #title {
+    opacity:0;
+    -moz-animation: fadeSlow 800ms 3s;
+    -webkit-animation: fadeSlow 800ms 3s;
+    animation-name: fadeSlow;
+    animation-duration: 800ms;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+
+  }
+  #title a:hover {
+    cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+    opacity:0.96;
+  }
+  #title img {
+
+}
+  @-webkit-keyframes fadeSlow {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeSlow {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeOut{
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  .menu{
+    position:fixed;
+    width:100px;
+    height:40px;
+    text-align:right;
+    top:24px;
+    right:32px;
+    font-family: 'Proxima Nova Rg';
+    font-size:1.4em;
+    z-index:999999;
+    animation-name: fadeSlow;
+    animation-duration: 800ms;
+    animation-delay: 3600ms;
+    animation-fill-mode: both;
+  }
+  .menu a {
+    color:#fff;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    text-decoration: none;
+    cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+  }
+  nav {
+    width:100%;
+    height:100%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    z-index:;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display:inline-block;
+    text-align: center;
+    margin-left:0px;
+    padding:0;
+
+    font-family: 'Feather';
+    font-size:3.32em;
+    letter-spacing: 0.04em;
+    font-weight:100;
+
+    animation-name:;
+    animation-duration: 320ms;
+    animation-fill-mode: both;
+  }
+  nav ul li {
+    opacity:0;
+  }
+  nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    cursor: url('img/img_vv_feather_cursor.png'), auto;
+  }
+  nav ul li a:hover {
+    color:#b8cd68;
+    text-decoration: none;
+    animation: underline 240ms both;
+    cursor: url('img/img_vv_feather_cursor_down.png'), auto;
+  }
+  @keyframes underline {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0.72;
+
+    }
+  }
+  nav ul li:first-child {
+    margin-left:0px;
+  }
+  @media (max-width:720px) {
+    body {
+      font-size:12px;
+    }
+    article {
+      padding-top:40px;
+      padding-left:24px;
+      padding-right:24px;
+    }
+    #title img {
+        width:480px;
+        height:auto;
+    }
+    nav ul li {
+      margin-left:16px;
+    }
+  }
+  @media (max-width:600px) {
+    body {
+      font-size:11px;
+    }
+    iframe {
+      width:500px;
+      height:230px;
+    }
+    article {
+      padding-top:40px;
+      padding-left:24px;
+      padding-right:24px;
+    }
+    #title img {
+        width:360px;
+        height:auto;
+    }
+    nav ul li {
+      margin-left:16px;
+    }
+  }
+  </style>
+  <body>
+    <audio>
+	<source src="img/bird.mp3"></source>
+
+
+</audio>
+<div class="menu">
+  <a href="#">menu</a>
+</div>
+<section id="playtime">
+
+  <nav>
+  <ul>
+
+    <li>
+      <a href="trailer.html">trailer</a>
+    </li>
+    <li>
+      <a href="synopsis.html">synopsis</a>
+    </li>
+    <li>
+      <a href="screenings.html">screenings</a>
+    </li>
+    <!--<li>
+      <a href="#">stills</a>
+    </li>-->
+    <li>
+      <a href="contact.html">contact</a>
+    </li>
+
+  </ul>
+</nav>
+
+    <div id="container">
+
+      <!--<div id="title"><a href="#">
+          <img src="img/img_vv_title_eng_by.png" /></a>
+      </div>-->
+      <div id="quote">
+        <img src="img/img_vv_quote_2.svg" />
+      </div>
+      <section id="video">
+      <!--  <video id="source" src="img/trailereng.mp4#t=0" type="video/mp4" poster="" autoplay ></video> -->
+      <iframe src="https://player.vimeo.com/video/199233090" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+      </section>
+    </div>
+</section>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    var video = $('#video').offset().top;
+          $(window).scroll(function () {
+      if ((video - $(window).scrollTop()) < 20) {
+          $('#container').stop().fadeTo(100, 0);
+      } else {
+          $('#container').stop().fadeTo('slow', 1);
+      }
+    });
+    </script>
+    <!--<script>
+    $('nav').hover(function() {
+      $('nav ul').css('animation-name', 'fadeIn');
+    })
+    $('nav').mouseleave(function(){
+      $('nav ul').css('animation-name', 'fadeOut');
+    })
+    </script>-->
+    <script>
+    $('#playtime').click(function(){
+      var video = document.getElementById('source');
+      if(!$('video').hasClass('clicked')){
+        $('video').css('animation-name', 'fadeFull').addClass('clicked');
+        $('#title').css('animation-name', 'fadeOut').css('animation-delay', '0ms').css('animation-duration', '320ms');
+        video.currentTime = 0;
+        $('video').prop('muted', false);
+  } else{
+        $('video').removeClass('clicked');
+        $('video').css('animation-name', 'fadeBack');
+        $('#title').css('animation-name', 'fadeIn').css('animation-delay', '0ms').css('animation-duration', '320ms');
+        $('video').prop('muted', true);
+  }
+    })
+    </script>
+    <script>
+    var audio = $('audio')[0];
+      $("#title, nav ul").hover(function() {
+      audio.play();
+      });
+    </script>
+    <script>
+    $('.menu').click(function(){
+      if(!$('nav').hasClass('active')){
+      $('nav').css('zIndex', '99999');
+      $('nav').css('background', '#111').addClass('active');
+      $('nav ul li').css('opacity', '1');
+      $('nav ul').css('animation-name', 'fadeIn');
+      $(this).text('close x');
+    } else {
+      $('nav').css('zIndex', '');
+      $('nav').css('background', '').removeClass('active');
+      $('nav ul li').css('opacity', '0');
+      $('nav ul').css('animation-name', 'fadeOut');
+        $(this).text('menu');
+    }
+  })
+    </script>
+  </body>
+</html>
