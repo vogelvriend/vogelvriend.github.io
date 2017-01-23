@@ -81,7 +81,7 @@
     height:auto;
   }
   #video {
-
+    z-index:9999;
   }
   #quote {
     position:absolute;
@@ -149,6 +149,7 @@
     animation-duration: 800ms;
     animation-delay: 1600ms;
     animation-fill-mode: both;
+      z-index: 99991;
 
   }
   #title a:hover {
@@ -204,6 +205,7 @@
     animation-duration: 800ms;
     animation-delay: 1800ms;
     animation-fill-mode: both;
+    z-index:99999;
   }
   .menu a {
     color:#fff;
@@ -225,6 +227,7 @@
     animation-duration: 800ms;
     animation-delay: 1600ms;
     animation-fill-mode: both;
+      z-index: 99991;
   }
   #by {
     top:40px;
@@ -238,6 +241,7 @@
     animation-duration: 800ms;
     animation-delay: 1600ms;
     animation-fill-mode: both;
+    z-index: 99991;
   }
   #by img {
       width:240px;
@@ -446,7 +450,7 @@
     <script>
     $('.menu').click(function(){
       if(!$('nav').hasClass('active')){
-      $('nav').css('zIndex', '3');
+      $('nav').css('zIndex', '99992');
       $('nav').css('background', '#111').addClass('active');
       $('nav ul li').css('opacity', '1');
       $('nav ul').css('animation-name', 'fadeIn');
