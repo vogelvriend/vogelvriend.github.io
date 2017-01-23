@@ -43,7 +43,7 @@
     line-height:1.4em;
     padding:40px 80px 40px 80px;
     font-weight:100;
-    z-index:2;
+    z-index:1;
   }
   #container {
     background-image: url('');
@@ -460,6 +460,7 @@
     $('.menu').click(function(){
       if(!$('nav').hasClass('active')){
       $('nav').css('background', '#111').addClass('active');
+      $('nav').css('zIndex', '3');
       $('nav ul li').css('opacity', '1');
       $('nav ul').css('animation-name', 'fadeIn');
       $(this).text('close x');
