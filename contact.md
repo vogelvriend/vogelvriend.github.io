@@ -3,5 +3,6 @@ title: Contact
 layout: contact
 ---
 
-La Veranda Film\
+La Veranda Film
+
 [matthijs@laverandafilm.nl](mailto:matthijs@laverandafilm.nl)
