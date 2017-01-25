@@ -6,4 +6,4 @@ quote_by: de Volkskrant
 layout: screenings
 ---
 
-screenings..
+Bookmark this page to keep up to date with all upcoming screenings of The Bird Boy.
